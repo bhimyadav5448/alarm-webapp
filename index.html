@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Alarm App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="alarm.css">
+		
+	</head>
+	<body>
+		<div class="watch">
+			<div class="navigation">
+				<div class="nav-display">
+					<a   onclick="switches(1);"><i class="fas fa-clock"></i><br><label>Watch</label></a>
+					<a   onclick="switches(2);"><i class="fas fa-bell"></i><br><label>Alarm</label></a>
+					<a   onclick="switches(3);"><i class="fas fa-stopwatch"></i><br><label>Stopwatch</label></a>
+					<a   onclick="switches(4);"><i class="fas fa-hourglass-half"></i><br><label>Timer</label></a>
+				</div>
+			</div>
+			<div class="watch_body" id="watch_body">
+			<div id="time"></div>
+			</div>	
+			<center>
+			<div class="alarm_body" id="alarm_body">
+				
+				<select class="select_alarm" id="selct_hr" >
+				</select>
+				<select class="select_alarm" id="selct_min" >
+				</select><br>
+				<button id ="set_alarm_btn" onclick="alarm_onoff();">SET ALARM</button>
+			</div>
+			
+			
+			<div class="stopwatch_body" id="stopwatch_body">
+				<div class="stopwatch" id="stopwatch">
+					<div class="d1" id="stopwatch_hr">00</div>
+					<div class="d">:</div>
+					<div class="d1" id="stopwatch_min">00</div>
+					<div class="d">:</div>
+					<div class="d1" id="stopwatch_sec">00</div>
+					<div class="d">:</div>
+					<div class="d1" id="stopwatch_msec">00</div>
+				</div>
+				<input class="stopwatch_btn" id="stopwatch_btn" type="button" value="Start" onclick="stopwatch_toggle();">
+				<input class="clear_btn" id="clear_btn" type="button" value="Clear" onclick="stopwatch_clear();">
+				<div class="stopwatch_laps" id="stopwatch_laps" style="display : none;">
+				</div>
+
+			</div>
+			
+			<div class="timer_body" id="timer_body">
+				<div id="slct_timer" >
+					<select id="slct_timer_hr" >
+					</select>
+					<select id="slct_timer_min" >
+					</select>
+					<select id="slct_timer_sec" >
+					</select>
+				</div>
+				
+				<div id="timer" class="timer" style='display:none;'>
+					<span id="showtimer_hr">00</span>:
+					<span id="showtimer_min">00</span>:
+					<span id="showtimer_sec">00</span>
+				</div>
+				<button id="set_timer" onclick="set_timr();">SET TIMER</button>
+			</div>
+			</center>
+			<audio id="alarm_tone" style="display:none;" controls>
+			<source src="tones/best-alarm-tone-mp3.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="timer_tone" style="display:none;" controls>
+			<source src="tones/Bomb Timer.mp3" type="audio/mpeg">
+			</audio>
+			<script src="alarm.js">
+			</script>
+		</div>
+	</body>
+</html>	

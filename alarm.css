@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	min-height:120vh;
+}
+.watch{
+	background:white;
+	margin: 5px auto;
+	padding: 0px;
+	display:block;
+	width:30%;
+	min-width:400px;
+	height:	100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navigation{
+	position:relative;
+	top:0;
+	width:100%;
+	background:white;
+	height:auto;
+}
+.nav-display{
+	margin:0;
+}
+.navigation a{
+	padding:20px;
+	background:lightgray;
+	height:60px;
+	margin:0;
+	margin-right:-4;
+	display:inline-block;
+	font-size:1.3em;
+	width:25%;
+	border:none;
+	text-align:center;
+	text-decoration:none;
+	color:#464646;
+}
+.navigation a:hover{
+	background:#dedede;
+	border-bottom:solid 3px gray;
+}
+.navigation label{
+	 color:gray;
+	 font-size:0.5em;
+}
+.watch_body{
+	align-items:center;
+	font-family: 'Montserrat', sans-serif;
+	font-size:2.5em;
+	text-align:center;
+	margin: 45% 0;
+}
+
+.alarm_body{
+	width:auto;
+	margin:40% auto;
+	display:none;
+}
+.timer_body select,.alarm_body select{
+	height:60px;
+	width:80px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:2.5em;
+	display:inline-block;
+	margin: 10px;
+	border-radius:10px;	
+}
+/* width */
+* ::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+* ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+* ::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+.timer_body button,.alarm_body button{
+	margin:150px 0 0 0;
+	border:none;
+	width:250px;
+	font-size:1.2em;
+	height:40px;
+}
+.stopwatch_body{
+	font-family: 'Montserrat', sans-serif;
+	width:auto;
+	margin:38% auto;
+	display:none;
+}
+.timer,.stopwatch{
+	font-size:2.5em;
+	margin:10% 0;
+	font-weight:normal;
+}
+.stopwatch .d1{
+	width:55px;
+	float:left;
+}
+.stopwatch .d{
+	float:left;
+}
+.stopwatch_body .stopwatch_btn{
+	margin:168px 0 0 0;
+	border:none;
+	width:124px;
+	font-size:1.2em;
+	height:40px;
+}
+.stopwatch_body .clear_btn{
+	border:none;
+	margin:0;
+	width:124px;
+	font-size:1.2em;
+	height:40px;
+	text-decoration:none;
+}
+.stopwatch_laps{
+	margin-top: 20px;
+    height: auto;
+    width: 100%;
+    max-height: 25%;
+    overflow: auto;
+}
+	
+.stopwatch_laps .lapses{
+	width: 100%;
+    font-size: 1.5em;
+    background: #f3f3f3;
+    height: auto;
+    border-bottom: solid 0.5px lightgray;
+}
+.timer_body{
+	font-family: 'Montserrat', sans-serif;
+	width:auto;
+	display:none;
+	margin:40% auto;
+}
